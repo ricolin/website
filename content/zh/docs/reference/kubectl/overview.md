@@ -153,12 +153,15 @@ The following table includes short descriptions and the general syntax for all o
 -->
 下表包含所有 kubectl 操作的简短描述和普通语法：
 
+code.block {
+  white-space: nowrap;
+}
 <!--
 Operation       | Syntax    |       Description
 -------------------- | -------------------- | --------------------
 `alpha`    | `kubectl alpha SUBCOMMAND [flags]` | List the available commands that correspond to alpha features, which are not enabled in Kubernetes clusters by default.
 `annotate`    | <code>kubectl annotate (-f FILENAME &#124; TYPE NAME &#124; TYPE/NAME) KEY_1=VAL_1 ... KEY_N=VAL_N [--overwrite] [--all] [--resource-version=version] [flags]</code> | Add or update the annotations of one or more resources.
-`api-resources`    | `kubectl api-resources [flags]` | List the API resources that are available.
+<code class="block">`api-resources`</code>    | `kubectl api-resources [flags]` | List the API resources that are available.
 `api-versions`    | `kubectl api-versions [flags]` | List the API versions that are available.
 `apply`            | `kubectl apply -f FILENAME [flags]`| Apply a configuration change to a resource from a file or stdin.
 `attach`        | `kubectl attach POD -c CONTAINER [-i] [-t] [flags]` | Attach to a running container either to view the output stream or interact with the container (stdin).
